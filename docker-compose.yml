@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  database:
+    image: postgres
+    container_name: rpg_system_database
+    ports:
+      - "5434:5432"
+    environment:
+      POSTGRES_DB: rpg_system_database
+      POSTGRES_USER: ademir
+      POSTGRES_PASSWORD: password
