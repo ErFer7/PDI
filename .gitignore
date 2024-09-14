@@ -1,52 +1,41 @@
-# Miscellaneous
-*.java.hsp
-*.sonarj
-*.sw*
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
 .DS_Store
-build.sh
-integration-repo
-ivy-cache
-argfile*
-activemq-data/
-classes/
+Thumbs.db
 
-# Log files
-jxl.log
-jmx.log
-derby.log
-
-# Gradle artifacts
-.gradle
-.gradletasknamecache
-/build
-buildSrc/build
-/spring-*/build
-/framework-*/build
-/integration-tests/build
-/src/asciidoc/build
-spring-test/test-output/
-
-# Maven artifacts
-/target/
-
-# Eclipse artifacts, including WTP generated manifests
-bin
+### STS ###
+.apt_generated
 .classpath
+.factorypath
 .project
 .settings
 .springBeans
-spring-*/src/main/java/META-INF/MANIFEST.MF
+.sts4-cache
 
-# IDEA artifacts and output dirs
+### IntelliJ IDEA ###
+.idea
+*.iws
 *.iml
 *.ipr
-*.iws
-.idea
-out
-test-output
-atlassian-ide-plugin.xml
 
-# VS Code
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
 .vscode/
 
-cached-antora-playbook.yml
+#frontend
+**/node_modules
+**/.angular
+**/dist
+*.d.ts
