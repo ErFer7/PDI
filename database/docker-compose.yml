@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+  ufsc-planner-database:
+    image: postgres
+    ports:
+      - "5464:5432"
+    environment:
+      POSTGRES_DB: usfc_planner
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: zxc1234
+    volumes:
+      - ./init-db.sh:/docker-entrypoint-initdb.d/init-db.sh
+    restart: always
